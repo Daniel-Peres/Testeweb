@@ -1,0 +1,66 @@
+########################################################
+Configurando user e email no git local
+
+git config --global user.name "nome do usuário"
+
+git config --global user.email "email do usuário"
+
+#########################################################
+Clonando o repositório para a pasta local
+//execute os comandos da pasta que irá utilizar para o projeto
+
+git init
+
+git clone https://github.com/jessicaarq/projeto_web.git
+
+git remote add origin https://github.com/jessicaarq/projeto_web.git
+
+git fetch origin
+
+git pull origin master
+
+######################################
+PULL - trás as atualizações do projeto para a pasta local
+//execute este comando sempre que for iniciar as alterações
+//da pasta local do projeto
+
+git pull origin master
+
+
+#######################################
+ADD, COMMIT e PUSH- salva as alterações no git e envia para o github
+//sempre que terminar uma atividade/acabar as alterações
+//da pasta local
+
+git add .
+
+git commit -am "primeiro commit Rodolfo"
+
+git push origin master 
+
+
+############################################
+Verificando o que foi alterado
+
+git status
+
+#############################################
+Listando as branches existentes
+
+git branch
+
+#############################################
+Criando uma nova branch
+
+git branch nome
+
+##############################################
+Trocando de branch
+
+git checkout nome_da_branch_existente
+
+OBS: A partir de agora as alterações são realizadas na branch nova
+Quando o push for executado, as alterações serão levadas para a branch nova no github também
+Depois do push, precisamos dar um merge no MASTER
+
+Assim os conflitos serão apresentados nesse merge.. podemos olhar o código lado a lado pra ver qual alteração deve ser mantida 

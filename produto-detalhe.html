@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto de Web - Fatec</title>
+ 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav navbar navbar-light bg-light">
+                <a class="navbar-brand" href="vitrine.html">
+                    <!-- Logo -->
+                    <img src="images/logo.png" id="imglogotopo" width="80">
+                </a>
+                <ul class="nav navbar ">
+                    <li class="navbar-item">
+                        <a href="login.html">Login |</a>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="btn btn-light" type="button" >
+                            <a href="cesta.html">
+                                <img src="images/24px.svg" id="imgcarrinho" width="30">
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--botão collapse-->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <!--Menu-->
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="vitrine.html">Home</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Produtos
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="vitrine.html">Blusas</a>
+                                <a class="dropdown-item" href="vitrine.html">Calças</a>
+                                <a class="dropdown-item" href="vitrine.html">Vestidos</a>
+                                <a class="dropdown-item" href="vitrine.html">Saias</a>
+                                <a class="dropdown-item" href="vitrine.html">Shorts</a>
+                                <a class="dropdown-item" href="vitrine.html">Acessórios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Cadastro
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="cadastro.html">Realize seu cadastro</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="search-container my-2 my-lg-0">
+                     <form class="form-inline" action="produto-busca.html">
+                        <input class="form-control" type="search" placeholder="Procurar..." name="search" id="mySearch" required>
+                        <button type="submit" class="btn btn-dark" onclick="doSearch()"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+            <!-- produto -->
+            <section id="product_details">
+                    <div class="container">
+                        <div class="row details_row">
+
+
+                            <div class="col-lg-6">
+                                <div class="details_image">
+                                    <div class="details_image_large">
+                                        <img src="images/sacada-roupas-femininas-inverno.png">    
+                                    </div>
+                                    <div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
+                                        <div class="details_image_thumbnail active" >
+                                            <img src="images/sacada-roupas-femininas-inverno.png">
+                                        </div>
+                                        <div class="details_image_thumbnail" >
+                                            <img src="images/blusa-de-la-vermelha.png">
+                                        </div>
+                                        <div class="details_image_thumbnail" >
+                                            <img src="images/blusa-furada-azul.png">
+                                        </div>
+                                        <div class="details_image_thumbnail" >
+                                            <img src="images/calca-estampada-preta.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="details_content">
+                                    <div class="details_name">Lorem ipsum</div>
+                                    <div class="details_discount">R$890</div>
+                                    <div class="details_price">R$670</div>
+                                    <div class="in_stock_container">
+                                        <div class="availability">Disponibilidade:</div>
+                                        Em Estoque
+                                    </div>
+                                    <div class="details_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, dolor eu interdum sodales, magna odio venenatis ipsum, pretium condimentum elit massa scelerisque tortor. Nulla feugiat nisl in massa placerat hendrerit. Proin vitae dolor convallis, ullamcorper lorem in, commodo est. Donec non nunc vulputate, mattis felis scelerisque, sagittis quam. Quisque ut vestibulum eros. Curabitur auctor dui a nibh porta imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis augue enim, blandit a interdum porta, viverra sit amet elit.</p>
+                                    </div>
+                                    <div class="product_quantity_container">
+                                        <div class="product_quantity clearfix">
+                                            <div class="form-group form-inline">
+                                              <label for="quantity_input">Qtd: </label>
+                                              <input type="number" class="form-control" id="quantity_input" value="1" size="10">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-outline-dark btn-sm"><a href="cesta.html">Comprar</a></button>
+                                    </div>
+                                    <div class="details_share">
+                                        <span>Compartilhe:</span>
+                                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+            
+        </div>
+        <div class="container">
+            <footer>
+        <section class="footer footer_1its py-5">
+            <div class="container py-md-4">
+                <div class="row footer-top mb-md-5 mb-4">
+                    <div class="col-lg-4 col-md-6 footer-grid_section_1its">
+                        <div class="footer-title-w3ls">
+                            <h3>Endereço</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Endereço : Oscar Freire, 1000, São Paulo - SP</p>
+                            <p>Telefone : 11 5348-9436</p>
+                            <p>Email : <a href="mailto:softwave@softwave.com">softwave@softwave.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its">
+                        <div class="footer-title-w3ls">
+                            <h3>Últimas Notícias</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p> Inscreva-se para receber as ofertas especiais, toda semana uma promoção especial para você</p>
+                            <form action="#" method="post" class="form-inline">
+                                <input class="form-control" type="email" name="Email" placeholder="Cadastre seu email..." required="" >
+                                <button class="btn btn-dark"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- //footer -->
+        </div>  
+    </body>
+</html>

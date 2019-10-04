@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projeto de Web - Fatec</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav navbar navbar-light bg-light">
+            <a class="navbar-brand" href="vitrine.html">
+                <!-- Logo -->
+                <img src="images/logo.png" id="imglogotopo" width="80">
+            </a>
+            <ul class="nav navbar ">
+                <li class="navbar-item">
+                    <a href="login.html">Login |</a>
+                </li>
+                <li class="navbar-item">
+                    <button class="btn btn-light" type="button" >
+                        <a href="cesta.html">
+                            <img src="images/24px.svg" id="imgcarrinho" width="30">
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!--botão collapse-->
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <!--Menu-->
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="vitrine.html">Home</a>
+                        </li>
+
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Produtos
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="vitrine.html">Blusas</a>
+                                <a class="dropdown-item" href="vitrine.html">Calças</a>
+                                <a class="dropdown-item" href="vitrine.html">Vestidos</a>
+                                <a class="dropdown-item" href="vitrine.html">Saias</a>
+                                <a class="dropdown-item" href="vitrine.html">Shorts</a>
+                                <a class="dropdown-item" href="vitrine.html">Acessórios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Cadastro
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="cadastro.html">Realize seu cadastro</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                <div class="search-container my-2 my-lg-0">
+                     <form class="form-inline" action="produto-busca.html">
+                        <input class="form-control" type="search" placeholder="Procurar..." name="search" id="mySearch" required>
+                        <button type="submit" class="btn btn-dark" onclick="doSearch()"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- busca -->
+        <section id="product_search">
+            <div class="container">
+                <div class="name_search">
+                    <p><h6>Pesquisa por: BOLACHA
+                    </h6></p>
+                </div>
+                
+                         
+                <div class="row search_row">
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <a href="produto-detalhe.html"><img src="images/sacada-roupas-femininas-inverno.png" alt=""></a>
+                                <div class="pi-links">
+                                    <a class="d-inline btn btn-light btn-outline-dark btn-sm" href="cesta.html" role="button">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="pi-text">
+                                <a href="produto-detalhe.html">
+                                    <h6>R$670</h6>
+                                    <p>Blusa de lã - Cinza e Preta Softwave</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="search-pagination">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                    </ul> 
+                </div>
+            </div>
+            
+        </section>
+        <!--//busca-->
+    </div>
+    <div class="container">
+        <!-- //footer -->
+        <footer>
+            <section class="footer footer_1its py-5">
+                <div class="container py-md-4">
+                    <div class="row footer-top mb-md-5 mb-4">
+                        <div class="col-lg-4 col-md-6 footer-grid_section_1its">
+                            <div class="footer-title-w3ls">
+                                <h3>Endereço</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p class="m-0">Endereço : Oscar Freire, 1000, São Paulo - SP</p>
+                                <p class="m-0">Telefone : 11 5348-9436</p>
+                                <p class="m-0">Email : <a href="mailto:softwave@softwave.com">softwave@softwave.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its">
+                            <div class="footer-title-w3ls">
+                                <h3>Últimas Notícias</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p> Inscreva-se para receber as ofertas especiais, toda semana uma promoção especial para você</p>
+                                <form action="#" method="post" class="form-inline">
+                                    <input class="form-control" type="email" name="Email" placeholder="Cadastre seu email..." required="" >
+                                    <button class="btn btn-dark"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- //footer -->
+    </div>  
+</body>
+</html>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("search-pagination");
+var btns = header.getElementsByClassName("page-item");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
